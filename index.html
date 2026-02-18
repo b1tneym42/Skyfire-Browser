@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyfire | Быстрее. Легче. Твой.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Sky<span>fire</span></a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="news.html" class="nav-link">Новости</a>
+                <a href="support.html" class="nav-link support-btn">Поддержать</a>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-btn">🌓</button>
+                <button class="btn-primary" onclick="actionDownload()">Скачать</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero container">
+        <div class="hero-content">
+            <h1>Быстрее. Легче. Твой.</h1>
+            <p>Современный, легковесный веб-браузер на базе Python. Skyfire использует движок QtWebEngine (Chromium) для безупречной скорости.</p>
+            <div class="hero-actions">
+                <button class="btn-main" onclick="actionDownload()">Попробовать Skyfire</button>
+                <a href="https://github.com/b1tneym42/Skyfire-Browser" class="btn-secondary" target="_blank">Исходный код</a>
+            </div>
+        </div>
+        
+        <div class="preview-container">
+            <div class="browser-mockup">
+                <div class="window-controls">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="window-body">
+                    <div class="skeleton-line short"></div>
+                    <div class="skeleton-line long"></div>
+                    <div class="skeleton-line medium"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features container">
+        <div class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>QtWebEngine</h3>
+            <p>Мощь Chromium под капотом. Поддержка всех современных веб-стандартов и высокая скорость рендеринга.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">🐍</div>
+            <h3>Python Core</h3>
+            <p>Написан на Python для максимальной гибкости. Легкий код — быстрая работа вашего устройства.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">🛡️</div>
+            <h3>Open Source</h3>
+            <p>Полностью открытый исходный код. Никакой слежки, только чистый интернет для каждого.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Sky<span>fire</span></a>
+                <p>Веб-серфинг в твоих руках.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Сообщество</h4>
+                    <a href="https://discord.gg/9K8pqkUyK3" target="_blank">Discord</a>
+                    <a href="https://t.me/SkyfireBrowser" target="_blank">Telegram</a>
+                    <a href="https://x.com/Skyfire_io" target="_blank">Twitter (X)</a>
+                </div>
+                <div class="link-group">
+                    <h4>Проект</h4>
+                    <a href="https://github.com/b1tneym42/Skyfire-Browser" target="_blank">GitHub</a>
+                    <a href="support.html">Поддержать</a>
+                    <a href="https://hypernotepad.com/n/bcf974e503547b24" target="_blank">Лицензия</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© 2026 Skyfire Browser. Создано с интузиазмом к открытому ПО.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
